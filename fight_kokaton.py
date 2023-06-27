@@ -149,7 +149,7 @@ class Score():
         self.point = 0
         self.img = self.font.render(f"スコア：{self.point}", 0, (0, 0, 255))
         self.rct = self.img.get_rect()
-        self.rct.center = 100, 850
+        self.rct.center = 100, HEIGHT-50
 
     def update(self, screen: pg.Surface):
         self.img = self.font.render(f"スコア：{self.point}", 0, (0, 0, 255))
